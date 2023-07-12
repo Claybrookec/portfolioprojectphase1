@@ -13,6 +13,8 @@
 .div1 {
     background-color: #f6f6f6;
     height: 15%;
+    padding-top: 1%;
+    padding-left: 8%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -24,24 +26,30 @@
   height: 80%;
   width: 50%;
   padding-left: 20px;
-  margin-left: auto;
+  margin-left: 40px;
   margin-right: auto;
   margin-top: 30px
+}
+
+.div2-p {
+  font-size: 21px;
+  line-height: 2;
+  width: 55%;
+  padding-left: 20%;
 }
 
 .div3 {
   background-color: #f6f6f6;
   height: 80%;
   width: 50%;
-  border: 5px solid black;
-  margin-left: auto;
+  margin-left: 10%;
   margin-right: auto;
   margin-top: 30px;
 }
 
 .div4 { 
   background-color: #f6f6f6;
-  height: 60%;
+  height: 125%;
   width: 100%;
   padding-left: 20px;
   margin-left: auto;
@@ -64,18 +72,28 @@ label {
   font-family: 'Courier New', Courier, monospace;
 }
 
-.first-name, .last-name {
-  display: inline-block;
-  padding: 20px;
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 19%;
 }
 
 input[type="Submit"] {
   background-color: #f6f6f6;
-  margin-top: 20px;
-  width: 25%;
-  height: 15%;
+  width: 35%;
+  margin: 0 auto;
+  margin-left: 13px;
   color: black;
   border: 3px solid black;
+  border-radius: 5%;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
 }
@@ -84,12 +102,35 @@ input[type="Submit"] {
   font-family: 'Courier New', Courier, monospace;
 }
 
-.chance-claybrooke, .posts, .resume {
-  display: inline-block;
+.chance-claybrooke {
   padding: 0 10px;
   font-weight: lighter;
   font-family: 'Courier New', Courier, monospace;
+  margin-left: 40px;
+  margin-top: 25px;
+  font-size: 32px;
 }
+
+.flex-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  padding-top: 2%;
+  top: 0;
+  right: 0;
+  gap: 40px;
+}
+
+.posts, .resume {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: right;
+  font-weight: lighter;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 
 .chance-email, .text-call {
   text-align: center;
@@ -112,13 +153,83 @@ fieldset {
 .about-me, .contact-me {
   font-family: 'Courier New', Courier, monospace;
   font-weight: lighter;
+  font-size: 50px;
 }
+
+.contact-me {
+  margin-bottom: 5px;
+  margin-left: 3%;
+}
+
 
 .about-me {
   text-decoration: underline;
+  padding-left: 20%;
 }
 
+img {
+  width: 43%;
+  padding-left: 20%;
+  padding-bottom: 50%;
+}
 
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-top: 15%;
+}
 
+input, textarea {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 4em;
+  background-color: #f6f6f6;
+  border: 2px solid lightgray;
+}
 
+textarea {
+  min-height: 8em;
+}
 
+u {
+  font-weight: bolder;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.social-icon {
+  font-size: inherit; /* Inherits the font size from the parent element */
+}
+
+.twitter-icon svg, .github-icon svg, .linkedin-icon svg {
+  color: black;
+  transform: scale(3);
+} 
+
+.flex-container-3 {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.twitter-icon-2 svg, .github-icon-2 svg, .linkedin-icon-2 svg {
+  color: black;
+  transform: scale(0.1);
+}
+
+.social-icon-2 {
+  font-size: inherit;
+}
